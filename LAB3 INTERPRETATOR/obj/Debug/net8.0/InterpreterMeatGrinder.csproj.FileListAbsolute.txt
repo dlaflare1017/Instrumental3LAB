@@ -1,0 +1,14 @@
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.AssemblyInfoInputs.cache
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.AssemblyInfo.cs
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.csproj.CoreCompileInputs.cache
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/bin/Debug/net8.0/InterpreterMeatGrinder
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/bin/Debug/net8.0/InterpreterMeatGrinder.deps.json
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/bin/Debug/net8.0/InterpreterMeatGrinder.runtimeconfig.json
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/bin/Debug/net8.0/InterpreterMeatGrinder.dll
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/bin/Debug/net8.0/InterpreterMeatGrinder.pdb
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.dll
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/refint/InterpreterMeatGrinder.dll
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.pdb
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/InterpreterMeatGrinder.genruntimeconfig.cache
+/Users/onetime/Desktop/INSTRUMENT SREDSTVA/LAB3 INTERPRETATOR/obj/Debug/net8.0/ref/InterpreterMeatGrinder.dll
