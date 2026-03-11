@@ -4,15 +4,14 @@ using System.Linq;
 
 namespace InterpreterMeatGrinder
 {
-    // ===== Context =====
     public class GrinderContext
     {
         public List<MeatPiece> Input { get; } = new();
-        public Dictionary<string, int> MinceComposition { get; } = new(); // type -> grams
+        public Dictionary<string, int> MinceComposition { get; } = new(); // type grams
         public int GrindLevel { get; private set; } = 0; // how many times ground
         public string ProductType { get; private set; } = "Raw Mince";
 
-        public int MaxHardnessAllowed { get; } = 7; // "if something too hard -> error"
+        public int MaxHardnessAllowed { get; } = 7; // if something too hard - error
 
         public GrinderContext(IEnumerable<MeatPiece> pieces)
         {
@@ -76,13 +75,12 @@ namespace InterpreterMeatGrinder
 
     public record MeatPiece(string Type, int Grams, int Hardness);
 
-    // ===== AbstractExpression =====
+    // AbstractExpression
     public interface IExpression
     {
         void Interpret(GrinderContext context);
     }
 
-    // ===== Terminal Expressions =====
     public class GrindExpression : IExpression
     {
         private readonly int _times;
@@ -117,8 +115,7 @@ namespace InterpreterMeatGrinder
         }
     }
 
-    // ===== Nonterminal Expressions =====
-    // MIX A B ... => leave only selected types and sum them
+    // MIX A B = leave only selected types and sum them
     public class MixExpression : IExpression
     {
         private readonly List<string> _types;
@@ -136,7 +133,7 @@ namespace InterpreterMeatGrinder
         }
     }
 
-    // Sequence of expressions (program)
+    // Sequence of expressions
     public class SequenceExpression : IExpression
     {
         private readonly List<IExpression> _expressions;
@@ -150,7 +147,7 @@ namespace InterpreterMeatGrinder
         }
     }
 
-    // ===== Parser for mini-language =====
+    // Parser for mini-language
     public static class RecipeParser
     {
         // Example:
@@ -204,19 +201,19 @@ namespace InterpreterMeatGrinder
     {
         static void Main()
         {
-            // ===== Input pieces (meat chunks) =====
+            // Input pieces (meat chunks)
             var pieces = new List<MeatPiece>
             {
                 new("Pork", 300, Hardness: 4),
                 new("Beef", 200, Hardness: 6),
                 new("Fat",  80,  Hardness: 2),
-                // Uncomment to see "too hard" case:
-                // new("Bone", 50, Hardness: 10),
+                // Uncomment to see too hard case:
+                new("Bone", 50, Hardness: 10),
             };
 
             var context = new GrinderContext(pieces);
 
-            // ===== Recipe (rules / language) =====
+            // Recipe (rules / language)
             string recipe = @"
                 // Meat grinder recipe (Interpreter demo)
                 GRIND 2
